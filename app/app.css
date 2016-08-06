@@ -29,6 +29,17 @@ button {
     cursor: pointer;
 }
 
+.small-box{
+    background-color: #003eff;
+    width:30px;
+    height: 30px;
+    margin-bottom: 10px;
+    color:white;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
 .sum-box{
     background-color: #50ac3a;
     width:50px;

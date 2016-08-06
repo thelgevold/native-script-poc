@@ -1,12 +1,11 @@
 import {Component} from "@angular/core";
 import {Adder} from './components/adder/adder';
-import {TabView, TabViewItem} from 'ui/tab-view';
+import {Algorithms} from './components/algorithms/algorithms';
 
 @Component({
     selector: "my-app",
     templateUrl: "app.component.html",
-    directives: [Adder]
+    directives: [Adder, Algorithms]
 })
 export class AppComponent {
-    
 }

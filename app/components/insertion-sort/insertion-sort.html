@@ -1,0 +1,6 @@
+<StackLayout orientation="horizontal">
+    <Label class="small-box" *ngFor="let item of list.items" [text]="item.val"></Label>
+</StackLayout>
+<Button (tap)="sortList()" [text]="'Sort'">Tee</Button> 
+
+
