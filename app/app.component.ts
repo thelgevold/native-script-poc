@@ -1,5 +1,6 @@
 import {Component} from "@angular/core";
-import {Adder} from './adder';
+import {Adder} from './components/adder/adder';
+import {TabView, TabViewItem} from 'ui/tab-view';
 
 @Component({
     selector: "my-app",
