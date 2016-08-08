@@ -1,17 +1,18 @@
 import {Component, Input} from '@angular/core';
-import {Insertion} from '../algorithms/insertion-sort';
+import {InsertionSortService} from './insertion-sort.service';
 
 @Component({
     selector: 'insertion-sort',
-    templateUrl: './components/insertion-sort/insertion-sort.html'
+    templateUrl: './components/algorithms/insertion-sort.component.html',
+    providers: [InsertionSortService]
 })
 
-export class InsertionSort {
+export class InsertionSortComponent {
 
     @Input() list:ValList;
     btnText = 'Sort';
 
-    constructor(){
+    constructor(private sortingService: InsertionSortService){
         this.list = new ValList();
         this.list.items = [
             new ListItem(5),
@@ -29,7 +30,7 @@ export class InsertionSort {
     }
 
     sortList(){
-        Insertion.sort(this.list)
+        this.sortingService.sort(this.list)
     }
 }
 
